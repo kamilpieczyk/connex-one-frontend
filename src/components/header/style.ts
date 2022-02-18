@@ -10,4 +10,6 @@ export const Container = styled.header`
 export const Header = styled.h1`
   margin: 0;
   color: white;
+  margin-bottom: 50px;
+  margin-top: 20px;
 `;
