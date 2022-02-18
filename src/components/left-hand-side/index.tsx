@@ -47,6 +47,12 @@ const LeftHandSideComponent: React.FC<{}> = () => {
 
   useEffect(() => {
     getEpochTime();
+    const interval = setInterval(() => {
+      getEpochTime();
+    }, 30000);
+    return () => {
+      clearInterval(interval);
+    };
   }, []);
 
   useEffect(() => {
