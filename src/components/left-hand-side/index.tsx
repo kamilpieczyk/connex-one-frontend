@@ -25,7 +25,6 @@ const LeftHandSideComponent: React.FC<{}> = () => {
     const timeA = moment(epoch);
     const timeB = moment(clientEpoch);
     const seconds = timeB.diff(timeA, "seconds");
-    console.log(seconds);
     setDifference(new Date(seconds * 1000).toISOString().substr(11, 8));
   };
 
